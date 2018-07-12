@@ -38,36 +38,6 @@
       </feature>
     </config-file>
 
-    <config-file target="*-Debug.plist" parent="com.apple.developer.associated-domains" mode="replace">
-      <array>
-        <string>applinks:plugin-debug.mobileapp.stampchamp.info</string>
-      </array>
-    </config-file>
-
-    <config-file target="*-Release.plist" parent="com.apple.developer.associated-domains" mode="replace">
-      <array>
-        <string>applinks:plugin-release.mobileapp.stampchamp.info</string>
-      </array>
-    </config-file>
-
-    <edit-config file="*-Debug.plist" target="com.apple.developer.associated-domains" mode="overwrite">
-      <array>
-        <string>applinks:gap.plugin-debug.mobileapp.stampchamp.info</string>
-      </array>
-    </edit-config>
-
-    <edit-config file="*-Release.plist" target="com.apple.developer.associated-domains" mode="overwrite">
-      <array>
-        <string>applinks:gap.plugin-release.mobileapp.stampchamp.info</string>
-      </array>
-    </edit-config>
-
-    <gap:config-file platform="ios" parent="com.apple.developer.associated-domains" mode="replace">
-        <array>
-          <string>applinks:example.com</string>
-        </array>
-    </gap:config-file>
-
 <!-- Objective-C Sources -->
 
     <source-file src="src/ios/CULPlugin.m"/>
